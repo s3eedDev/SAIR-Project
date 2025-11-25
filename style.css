@@ -1,0 +1,212 @@
+body {
+    background-color: #212121;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed; /* يخليه يمشي مع المستخدم */
+  top: 0; /* يثبت النافبار فوق الصفحة */
+  left: 0; /* يثبت النافبار على اليسار */
+  width: 100%; 
+  
+  background-color: #212121; 
+  box-shadow: 0 16px 15px 6px #000000; 
+  z-index: 1000; /* عشان ما تختفي ورا العناصر */
+}
+
+.navbar .container {
+  display: flex; /
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+
+}
+
+
+
+.navbar .nav-sections {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar .nav-sections a {
+  color: white;
+  text-decoration: none; /* يشيل الخط تحت النص */
+  font-size: 25px;
+  transition: color 0.3s;
+  margin-left: 60px;
+  
+}
+
+.navbar .nav-sections a:hover {
+  color: #F0D060; 
+}
+
+/* Main Content Styles */
+
+main {
+    margin-top: 100px; /* عشان ما يكون تحت النافبار */
+    padding:250px 80px;
+
+}
+
+#Start {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #F0D060;
+}
+
+#Welcome {
+    color: #CCCCCC;
+    font-size: 25px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#product {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding: 550px 0px;
+    margin-bottom: -460px; /* يضيف مسافة تحت العنوان */
+}
+
+#product-info {
+    color: #CCCCCC;
+    font-size: 25px;
+    text-align: left;
+    max-width: 800px; /* يحدد أقصى عرض للنص */
+    margin: 0 auto;
+    margin-bottom: 550px; /* يضيف مسافة تحت الفقرة */
+}
+
+/* Advantages Section Styles */
+
+#advantages {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px; /* يضيف مسافة تحت العنوان */
+}
+
+.more-info {
+  display: none; /* مخفية افتراضيًا */
+  color: #AAAAAA;
+  font-size: 18px;
+  margin-top: 15px;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+
+.BoxContainer .Box {
+    background-color: #212121; 
+    box-shadow: 0 16px 15px 6px #000000;
+    height: 483px;
+    width: 372px; 
+    border-radius: 31px;
+    padding: 20px; 
+    margin-bottom: 20px; /* يضيف مسافة تحت الصندوق */
+}
+
+.BoxContainer {
+    display: flex; /* يخلي الصناديق في صف */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 550px;
+}
+
+.BoxContainer .Box p {
+    color: #CCCCCC;
+    font-size: 20px;
+    text-align: center;
+}
+
+.BoxContainer .Box button {
+    background-color: #F0D060; 
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+/* Contact Section Styles */
+
+#contact {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px; /* يضيف مسافة تحت العنوان */
+}
+
+.ContactSection input.ContactSection textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.ContactSection button {
+    background-color: #F0D060; 
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+.ContactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.ContactSection input, .ContactSection textarea {
+    background-color: #333333; 
+    color: white;
+}
+
+.ContactSection input {
+    height: 40px;
+    width: 400px;
+}
+
+.ContactSection textarea {
+    height: 200px;
+    width: 400px;
+    resize: none; /*يشيل خاصية تغيير الحجم*/ 
+}
+.ContactSection button:hover {
+    background-color: #d4b848; 
+}
+
+/* Animation Styles */
+
+section { /* animation */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
